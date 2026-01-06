@@ -13,7 +13,7 @@ import {
   RefreshCw
 } from 'lucide-react';
 
-import { getAuditLogs, getAuditStats } from '../../../../services/api.js';
+import { getAuditLogs, getAuditStats } from '../services/api.js';
 
 function AuditLogs() {
   const [auditLogs, setAuditLogs] = useState([]);
