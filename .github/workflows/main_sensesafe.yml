@@ -1,4 +1,4 @@
-name: Build and deploy Node.js app to Azure Web App - SenseSafe
+name: Build and deploy Admin Dashboard to Azure Web App - SenseSafe
 
 on:
   push:
@@ -22,8 +22,8 @@ jobs:
         with:
           node-version: '22.x'
 
-      - name: Install dependencies and build
-        working-directory: sensesafe
+      - name: Install dependencies and build admin dashboard
+        working-directory: sensesafe/src/admin-dashboard
         run: |
           npm install
           npm run build
@@ -40,4 +40,4 @@ jobs:
         with:
           app-name: 'SenseSafe'
           slot-name: 'Production'
-          package: sensesafe
+          package: sensesafe/src/admin-dashboard
