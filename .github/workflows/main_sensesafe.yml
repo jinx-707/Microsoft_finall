@@ -23,7 +23,7 @@ jobs:
           node-version: '22.x'
 
       - name: Install dependencies and build admin dashboard
-        working-directory: sensesafe/src/apps/admin-dashboard
+        working-directory: sensesafe/src/apps/admin-dashbaord
         run: |
           npm install
           npm run build
@@ -40,4 +40,4 @@ jobs:
         with:
           app-name: 'SenseSafe'
           slot-name: 'Production'
-          package: sensesafe/src/apps/admin-dashboard
+          package: sensesafe/dist/admin-dashboard
