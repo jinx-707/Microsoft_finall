@@ -13,7 +13,7 @@ import {
   resolveSOS,
   resolveIncident,
   markMessageAsRead
-} from '../../../../services/api.js';
+} from '../services/api.js';
 
 function AdminActions() {
   const [alerts, setAlerts] = useState([]);
