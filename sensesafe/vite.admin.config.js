@@ -11,17 +11,17 @@ export default defineConfig({
     port: 3001,
     proxy: {
       '/api': {
-        target: 'http://192.168.0.130:8000',
+        target: 'https://sensesafe-c9c8bpend7cceeh7.eastasia-01.azurewebsites.net',
         changeOrigin: true,
         secure: false,
       },
       '/auth': {
-        target: 'http://192.168.0.130:8000',
+        target: 'https://sensesafe-c9c8bpend7cceeh7.eastasia-01.azurewebsites.net',
         changeOrigin: true,
         secure: false,
       },
       '/health': {
-        target: 'http://192.168.0.130:8000',
+        target: 'https://sensesafe-c9c8bpend7cceeh7.eastasia-01.azurewebsites.net',
         changeOrigin: true,
         secure: false,
       }
