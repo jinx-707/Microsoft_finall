@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Wifi, Database, Cloud, Brain } from 'lucide-react';
-import { getSystemHealth } from '../../../../services/api.js';
+import { getSystemHealth } from '../services/api.js';
 
 function SystemHealthStrip() {
   const [health, setHealth] = useState(null);
