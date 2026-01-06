@@ -11,7 +11,7 @@ import Users from './pages/Users';
 import Analytics from './pages/Analytics';
 import Settings from './pages/Settings';
 import AuditLogs from './pages/AuditLogs';
-import { getAllAlertsForAdmin } from '../../../services/api.js';
+import { getAllAlertsForAdmin } from './services/api.js';
 
 function App() {
   const [alerts, setAlerts] = useState([]);
