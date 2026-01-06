@@ -58,5 +58,6 @@ jobs:
         with:
           app-name: 'SenseSafe'
           slot-name: 'Production'
-          package: sensesafe
+          package: node-app
+
 
